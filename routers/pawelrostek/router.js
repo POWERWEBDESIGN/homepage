@@ -6,6 +6,7 @@ var routerApp = angular.module('routerApp',
 	'angular-loading-bar', 
 	'ngAnimate', 
 	'blockUI',
+	'ng-isotope',
 	'smart-table'
 	]);
 

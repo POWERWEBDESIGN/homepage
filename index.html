@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html ng-app="routerApp">
 <head>
-  <meta name="description" content="Power Web Design - projektowanie stron internetowych, sklepy internetowe, portale, responsive, mobile compatybile">
+    <meta name="description" content="Power Web Design - projektowanie stron internetowych, sklepy internetowe, portale, responsive, mobile compatybile">
     <meta name="keywords" content="web design, angular, node, bootstrap, java script, jQuery, PHP, postgresql, mysql, database, database performance, security, zend framework, css3, html5, gentoo, linux, drupal, wordpress, git, network security">
-    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="author" content="Power Web Design">
     <title ng-bind="title"></title>
     <meta name="description" content="Parallax backgrounds with centered content">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -18,6 +19,7 @@
     <!-- Custom CSS -->
     <link href="public/css/main.css" rel='stylesheet'/>
     <link href="public/css/timeline.css" rel='stylesheet'/>
+    <link href="public/css/minimal-isolate.css" rel='stylesheet'/>
 
     <!-- JS (load angular, ui-router, and our custom js file) -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -30,6 +32,10 @@
     <script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
     <script src="bower_components/angular-loading-bar/src/loading-bar.js"></script>
     <script src="bower_components/angular-smart-table/dist/smart-table.js"></script>
+    
+    <script src="bower_components/ng-isotope/isotope.pkgd.js"></script>
+    <script src="bower_components/ng-isotope/ng-isotope.js"></script>
+
 
     <script src="shopApp.js"></script>
     <script src="routers/pawelrostek/router.js"></script>
@@ -91,7 +97,7 @@
 </section>
 
 <!-- About content section -->
-<section  id="about-section" class="background parallax bg-logo-head3" data-img-width="1600" data-img-height="1080" data-diff="40">
+<section  id="about-section" class="background parallax bg-logo-head3" data-img-width="1600" data-img-height="1080" data-diff="40" autoscroll="true">
     <div data-ui-view="vw-about"></div>
 </section>
 
