@@ -17,21 +17,20 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-md-12">
-                <div class="btn-group btn-primary" isotope-filter isotope-filter-event="filter-elements" isotope-filter-group="certyficate">
+                <div class="filters-isotope" isotope-filter isotope-filter-event="filter-elements" isotope-filter-group="certyficate">
                     <button isotope-filter-by="*" class="btn btn-default active">All</button>
                     <button isotope-filter-by=".programing" class="btn btn-default">Programing</button>
                     <button isotope-filter-by=".networking" class="btn btn-default">Networking</button>
                     <button isotope-filter-by=".system" class="btn btn-default">System</button>
                 </div>
+                <p>&nbsp;</p>
 
                 <!-- attributes available: isotope-layout-mode="fitRows" isotope-item-selector="div" -->
                 <div isotope-grid="certList" isotope-reload-event="reload-elements"
                      isotope-filter-event="filter-elements">
-
                     <div class="element-item {{element.category}}" data-category="{{element.category}}" ng-repeat="element in certList">
                         <img src="{{element.ico}}" />
                         <h5 class="service-heading">{{element.name}}</h5>
-                        <span>{{element.category}}</span>
                         <a class="overlay" data-toggle="modal" data-target="#modal{{element.number}}">
                             <i class="glyphicon glyphicon-zoom-in"></i>
                         </a>
