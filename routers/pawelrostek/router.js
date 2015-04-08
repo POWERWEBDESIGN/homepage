@@ -32,6 +32,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
 	        url: '/home',
 	        views: {
 	            '': { 
+	            	// templateUrl: 'partial/views/multi-layer.html',
 	            	templateUrl: 'partial/views/home.html',
 	            	controller: 'homeController'
 	             },

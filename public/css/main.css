@@ -217,6 +217,7 @@ a, a:hover, a:focus, a:active, a.active {
 .navbar-default {
     border-color: transparent;
     background-color: #222;
+    z-index: 9999;
 }
 
 .navbar-default .navbar-brand {
@@ -704,3 +705,54 @@ header#continer-intro-text h1 .heavier {
   border:1px solid transparent;
   background-color: #fe5607;
 }
+
+/*  PARALLAX  */
+
+
+.parallax-section {
+  border: 1px solid red;
+  position: relative;
+  height: 1500px;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: -9999in -9999in;
+}
+
+#tia {
+  z-index: 1100;
+  background-image: url(//cdn.madwellnyc.com/work-index/tia/alt/bricktop.jpg), url(//cdn.madwellnyc.com/work-index/tia/alt/door.png), url(//cdn.madwellnyc.com/work-index/tia/alt/bear.png), url(//cdn.madwellnyc.com/work-index/tia/alt/tia.jpg);
+}
+
+@media only screen and (max-width: 1440px){
+  #tia {
+    background-image: url(//cdn.madwellnyc.com/work-index/tia/alt/bricktop.jpg), url(//cdn.madwellnyc.com/work-index/tia/alt/door.png), url(//cdn.madwellnyc.com/work-index/tia/alt/bear.png), url(//cdn.madwellnyc.com/work-index/tia/alt/tia.jpg);
+  }
+}
+
+.now {
+  opacity: 1;
+  background-position: 44.5px -125.3px, 57.5px -311.75px, 415.5px 469.05px, -247.5px -125.3px;
+}
+
+/* 2 */
+#story-freext>div:nth-of-type(1) {
+    background: url(//cdn.madwellnyc.com/work-index/tia/alt/bear.png) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1600px;
+    position:absolute;
+    width:100%;
+    top:0;left:0;
+}
+
+#story-freext>div:nth-of-type(2) {
+    background: url(//cdn.madwellnyc.com/work-index/tia/alt/door.png) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1600px;
+    position:absolute;
+    top:0px;left:100px;
+    width:100%;
+}
+
+.parallax-item{position:absolute;z-index:5;top:40px;left:400px;}
